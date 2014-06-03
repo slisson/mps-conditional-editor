@@ -66,7 +66,7 @@
       <fileset dir="${basedir}/solutions/de.slisson.mps.conditionalEditor.runtime/models" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/de.slisson.mps.conditionalEditor.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.runtime-src.jar">
-      <fileset dir="${basedir}/solutions/de.slisson.mps.conditionalEditor.runtime/source_gen" includes="**/*.java" />
+      <fileset dir="${basedir}/solutions/de.slisson.mps.conditionalEditor.runtime/source_gen" />
       <zipfileset file="${basedir}/solutions/de.slisson.mps.conditionalEditor.runtime/de.slisson.mps.conditionalEditor.runtime.msd" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/solutions-de.slisson.mps.conditionalEditor.runtime-models" prefix="module/models" />
     </jar>
@@ -105,8 +105,8 @@
       <fileset dir="${basedir}/languages/de.slisson.mps.conditionalEditor/languageModels" includes="**/*.mps, **/*.metadata, **/*.history, **/*.mpsr, **/.model" />
     </copyModels>
     <jar destfile="${build.tmp}/default/de.slisson.mps.conditionalEditor.zip/de.slisson.mps.conditionalEditor/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor-src.jar">
-      <fileset dir="${basedir}/languages/de.slisson.mps.conditionalEditor/generator/source_gen" includes="**/*.java" />
-      <fileset dir="${basedir}/languages/de.slisson.mps.conditionalEditor/source_gen" includes="**/*.java" />
+      <fileset dir="${basedir}/languages/de.slisson.mps.conditionalEditor/generator/source_gen" />
+      <fileset dir="${basedir}/languages/de.slisson.mps.conditionalEditor/source_gen" />
       <zipfileset file="${basedir}/languages/de.slisson.mps.conditionalEditor/de.slisson.mps.conditionalEditor.mpl" prefix="module" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.conditionalEditor-generator-template" prefix="module/generator/template" />
       <zipfileset dir="${build.tmp}/customProcessors/copyModels/languages-de.slisson.mps.conditionalEditor-languageModels" prefix="module/languageModels" />
@@ -140,7 +140,7 @@
   
   <target name="generate" depends="declare-mps-tasks, fetchDependencies">
     <echo message="generating" />
-    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" fork="true">
+    <generate strictMode="true" parallelMode="true" parallelThreads="8" useInplaceTransform="false" hideWarnings="false" fork="true">
       <plugin path="${artifacts.mps}/plugins/mps-core/META-INF/plugin.xml/../.." />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.blTypes.jar" />
       <library file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
@@ -248,7 +248,7 @@
     </javac>
   </target>
   
-  <target name="java.compile.de.slisson.mps.conditionalEditor" depends="fetchDependencies">
+  <target name="java.compile.de.slisson.mps.conditionalEditor" depends="java.compile.de.slisson.mps.conditionalEditor.runtime, fetchDependencies">
     <mkdir dir="${basedir}/languages/de.slisson.mps.conditionalEditor/source_gen" />
     <mkdir dir="${build.tmp}/java/out/de.slisson.mps.conditionalEditor" />
     <javac destdir="${build.tmp}/java/out/de.slisson.mps.conditionalEditor" fork="true" includeantruntime="false">
@@ -266,6 +266,9 @@
         <fileset file="${artifacts.mps}/lib/mps-editor-runtime.jar" />
         <fileset file="${artifacts.mps}/lib/mps-editor.jar" />
         <fileset file="${artifacts.mps}/lib/mps-platform.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-icons.jar" />
+        <fileset file="${artifacts.mps}/lib/mps-workbench.jar" />
+        <pathelement path="${build.tmp}/java/out/de.slisson.mps.conditionalEditor.runtime" />
         <fileset file="${artifacts.mps}/lib/log4j.jar" />
         <fileset file="${artifacts.mps}/lib/annotations.jar" />
         <fileset file="${artifacts.mps}/lib/jdom.jar" />
@@ -280,7 +283,6 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
@@ -330,7 +332,6 @@
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.classifiers.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.closures.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.collections.jar" />
-        <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.jdk7.jar" />
         <fileset file="${artifacts.mps}/languages/baseLanguage/jetbrains.mps.baseLanguage.scopes.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.actions.jar" />
         <fileset file="${artifacts.mps}/languages/languageDesign/jetbrains.mps.lang.constraints.jar" />
