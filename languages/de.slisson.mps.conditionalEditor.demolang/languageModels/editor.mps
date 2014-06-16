@@ -72,6 +72,9 @@
         </node>
       </node>
     </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="8154540067451748988" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="8154540067451741752" resolveInfo="conditonalEditorDemo" />
+    </node>
   </root>
   <root type="91fu.ConditionalConceptEditorDeclaration" typeId="91fu.2877762237606934069" id="8436908933890915987" nodeInfo="ng">
     <property name="priority" nameId="91fu.2877762237607078183" value="100" />
@@ -136,6 +139,9 @@
         </node>
       </node>
     </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="8154540067451743301" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="8154540067451741752" resolveInfo="conditonalEditorDemo" />
+    </node>
   </root>
   <root type="91fu.ConditionalConceptEditorDeclaration" typeId="91fu.2877762237606934069" id="8436908933892449232" nodeInfo="ng">
     <property name="priority" nameId="91fu.2877762237607078183" value="200" />
@@ -196,6 +202,9 @@
         <property name="flag" nameId="tpc2.1186414551515" value="true" />
       </node>
     </node>
+    <node role="contextHints" roleId="tpc2.2597348684684069742" type="tpc2.ConceptEditorHintDeclarationReference" typeId="tpc2.6822301196700715228" id="8154540067451747341" nodeInfo="ig">
+      <link role="hint" roleId="tpc2.5944657839026714445" targetNodeId="8154540067451741752" resolveInfo="conditonalEditorDemo" />
+    </node>
   </root>
   <root type="tpee.ClassConcept" typeId="tpee.1068390468198" id="8436908933893001952" nodeInfo="ig">
     <property name="name" nameId="tpck.1169194664001" value="ExpressionTypeInfo" />
@@ -210,6 +219,13 @@
       </node>
     </node>
     <node role="visibility" roleId="tpee.1178549979242" type="tpee.PublicVisibility" typeId="tpee.1146644602865" id="8436908933893001953" nodeInfo="nn" />
+  </root>
+  <root type="tpc2.ConceptEditorContextHints" typeId="tpc2.5944657839000868711" id="8154540067451700040" nodeInfo="ig">
+    <property name="name" nameId="tpck.1169194664001" value="conditionalEditorDemo" />
+    <node role="hints" roleId="tpc2.5944657839000877563" type="tpc2.ConceptEditorHintDeclaration" typeId="tpc2.5944657839003601246" id="8154540067451741752" nodeInfo="ig">
+      <property name="showInUI" nameId="tpc2.168363875802087287" value="true" />
+      <property name="name" nameId="tpck.1169194664001" value="conditonalEditorDemo" />
+    </node>
   </root>
 </model>
 
