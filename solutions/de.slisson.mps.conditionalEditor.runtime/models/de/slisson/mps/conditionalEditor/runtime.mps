@@ -1945,7 +1945,7 @@
                     <ref role="3cqZAo" node="2vJRo8gv5GG" resolve="languageRuntime" />
                   </node>
                   <node concept="liA8E" id="2vJRo8gv5Nv" role="2OqNvi">
-                    <ref role="37wK5l" to="n55e:~LanguageRuntime.getAspectDescriptor(java.lang.Class):jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" resolve="getAspectDescriptor" />
+                    <ref role="37wK5l" to="n55e:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" resolve="getAspect" />
                     <node concept="3VsKOn" id="2vJRo8gv5H4" role="37wK5m">
                       <ref role="3VsUkX" to="htwh:~EditorAspectDescriptor" resolve="EditorAspectDescriptor" />
                     </node>
