@@ -7,6 +7,7 @@
     <use id="443f4c36-fcf5-4eb6-9500-8d06ed259e3e" name="jetbrains.mps.baseLanguage.classifiers" version="-1" />
     <use id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin" version="-1" />
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="1" />
+    <use id="83888646-71ce-4f1c-9c53-c54016f6ad4f" name="jetbrains.mps.baseLanguage.collections" version="-1" />
   </languages>
   <imports>
     <import index="f2bq" ref="f:java_stub#498d89d2-c2e9-11e2-ad49-6cf049e62fe5#com.intellij.util.messages(MPS.IDEA/com.intellij.util.messages@java_stub)" />
@@ -91,6 +92,7 @@
       <concept id="1068580123155" name="jetbrains.mps.baseLanguage.structure.ExpressionStatement" flags="nn" index="3clFbF">
         <child id="1068580123156" name="expression" index="3clFbG" />
       </concept>
+      <concept id="1068580123157" name="jetbrains.mps.baseLanguage.structure.Statement" flags="nn" index="3clFbH" />
       <concept id="1068580123159" name="jetbrains.mps.baseLanguage.structure.IfStatement" flags="nn" index="3clFbJ">
         <child id="1068580123160" name="condition" index="3clFbw" />
         <child id="1068580123161" name="ifTrue" index="3clFbx" />
@@ -107,6 +109,7 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
+      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -263,6 +266,24 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="2he9CywIBCt" role="3cqZAp" />
+        <node concept="3clFbF" id="2he9CywJvqo" role="3cqZAp">
+          <node concept="2YIFZM" id="2he9CywJvqp" role="3clFbG">
+            <ref role="1Pybhc" to="fdaf:2he9CywHW6P" resolve="ConditionalEditors" />
+            <ref role="37wK5l" to="fdaf:2he9CywJn4N" resolve="setInstance" />
+            <node concept="2ShNRf" id="2he9CywJvzv" role="37wK5m">
+              <node concept="1pGfFk" id="2he9CywJvzu" role="2ShVmc">
+                <ref role="37wK5l" to="fdaf:2he9CywI52r" resolve="ConditionalEditors" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2he9CywSvqV" role="3cqZAp">
+          <node concept="2YIFZM" id="2he9CywSxQy" role="3clFbG">
+            <ref role="37wK5l" to="fdaf:2he9CywSwIK" resolve="getInstance" />
+            <ref role="1Pybhc" to="fdaf:2he9CywPBwd" resolve="EditorRegistryCache" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2uRRBN" id="2vJRo8g$$y0" role="2uRRB_">
@@ -290,6 +311,25 @@
               <node concept="2BZ7hE" id="4X6FKySdToL" role="2OqNvi">
                 <ref role="2WH_rO" node="2vJRo8g$$xg" resolve="myConnection" />
               </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="2he9CywJahe" role="3cqZAp" />
+        <node concept="3clFbF" id="2he9CywJaot" role="3cqZAp">
+          <node concept="2YIFZM" id="2he9CywJvon" role="3clFbG">
+            <ref role="37wK5l" to="fdaf:2he9CywJn4N" resolve="setInstance" />
+            <ref role="1Pybhc" to="fdaf:2he9CywHW6P" resolve="ConditionalEditors" />
+            <node concept="10Nm6u" id="2he9CywJvpr" role="37wK5m" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2he9CywSy5z" role="3cqZAp">
+          <node concept="2OqwBi" id="2he9CywSya3" role="3clFbG">
+            <node concept="2YIFZM" id="2he9CywSy7Q" role="2Oq$k0">
+              <ref role="37wK5l" to="fdaf:2he9CywSwIK" resolve="getInstance" />
+              <ref role="1Pybhc" to="fdaf:2he9CywPBwd" resolve="EditorRegistryCache" />
+            </node>
+            <node concept="liA8E" id="2he9CywSyw$" role="2OqNvi">
+              <ref role="37wK5l" to="fdaf:2he9CywRWvd" resolve="dispose" />
             </node>
           </node>
         </node>
