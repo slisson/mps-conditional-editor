@@ -2726,82 +2726,92 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="2he9CywSBjf" role="3cqZAp">
-          <node concept="1rXfSq" id="2he9CywSBjg" role="3clFbG">
-            <ref role="37wK5l" node="2he9CywQqVk" resolve="visitExtendingLanguages" />
-            <node concept="37vLTw" id="2he9CywSBjh" role="37wK5m">
-              <ref role="3cqZAo" node="2he9CywSBj6" resolve="language" />
-            </node>
-            <node concept="1bVj0M" id="2he9CywSBji" role="37wK5m">
-              <node concept="37vLTG" id="2he9CywSBjj" role="1bW2Oz">
-                <property role="TrG5h" value="extendingLanguage" />
-                <node concept="3uibUv" id="2he9CywSBjk" role="1tU5fm">
-                  <ref role="3uigEE" to="n55e:~LanguageRuntime" resolve="LanguageRuntime" />
+        <node concept="3clFbJ" id="2BTg15BqGvG" role="3cqZAp">
+          <node concept="3clFbS" id="2BTg15BqGvI" role="3clFbx">
+            <node concept="3clFbF" id="2he9CywSBjf" role="3cqZAp">
+              <node concept="1rXfSq" id="2he9CywSBjg" role="3clFbG">
+                <ref role="37wK5l" node="2he9CywQqVk" resolve="visitExtendingLanguages" />
+                <node concept="37vLTw" id="2he9CywSBjh" role="37wK5m">
+                  <ref role="3cqZAo" node="2he9CywSBj6" resolve="language" />
                 </node>
-              </node>
-              <node concept="3clFbS" id="2he9CywSBjl" role="1bW5cS">
-                <node concept="3cpWs8" id="2he9CywSBjm" role="3cqZAp">
-                  <node concept="3cpWsn" id="2he9CywSBjn" role="3cpWs9">
-                    <property role="3TUv4t" value="false" />
-                    <property role="TrG5h" value="aspectDescriptor" />
-                    <node concept="3uibUv" id="2he9CywSBjo" role="1tU5fm">
-                      <ref role="3uigEE" to="htwh:~EditorAspectDescriptor" resolve="EditorAspectDescriptor" />
+                <node concept="1bVj0M" id="2he9CywSBji" role="37wK5m">
+                  <node concept="37vLTG" id="2he9CywSBjj" role="1bW2Oz">
+                    <property role="TrG5h" value="extendingLanguage" />
+                    <node concept="3uibUv" id="2he9CywSBjk" role="1tU5fm">
+                      <ref role="3uigEE" to="n55e:~LanguageRuntime" resolve="LanguageRuntime" />
                     </node>
-                    <node concept="2OqwBi" id="2he9CywSBjp" role="33vP2m">
-                      <node concept="37vLTw" id="2he9CywSBjq" role="2Oq$k0">
-                        <ref role="3cqZAo" node="2he9CywSBjj" resolve="extendingLanguage" />
-                      </node>
-                      <node concept="liA8E" id="2he9CywSBjr" role="2OqNvi">
-                        <ref role="37wK5l" to="n55e:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" resolve="getAspect" />
-                        <node concept="3VsKOn" id="2he9CywSBjs" role="37wK5m">
-                          <ref role="3VsUkX" to="htwh:~EditorAspectDescriptor" resolve="EditorAspectDescriptor" />
+                  </node>
+                  <node concept="3clFbS" id="2he9CywSBjl" role="1bW5cS">
+                    <node concept="3cpWs8" id="2he9CywSBjm" role="3cqZAp">
+                      <node concept="3cpWsn" id="2he9CywSBjn" role="3cpWs9">
+                        <property role="3TUv4t" value="false" />
+                        <property role="TrG5h" value="aspectDescriptor" />
+                        <node concept="3uibUv" id="2he9CywSBjo" role="1tU5fm">
+                          <ref role="3uigEE" to="htwh:~EditorAspectDescriptor" resolve="EditorAspectDescriptor" />
+                        </node>
+                        <node concept="2OqwBi" id="2he9CywSBjp" role="33vP2m">
+                          <node concept="37vLTw" id="2he9CywSBjq" role="2Oq$k0">
+                            <ref role="3cqZAo" node="2he9CywSBjj" resolve="extendingLanguage" />
+                          </node>
+                          <node concept="liA8E" id="2he9CywSBjr" role="2OqNvi">
+                            <ref role="37wK5l" to="n55e:~LanguageRuntime.getAspect(java.lang.Class):jetbrains.mps.smodel.runtime.LanguageAspectDescriptor" resolve="getAspect" />
+                            <node concept="3VsKOn" id="2he9CywSBjs" role="37wK5m">
+                              <ref role="3VsUkX" to="htwh:~EditorAspectDescriptor" resolve="EditorAspectDescriptor" />
+                            </node>
+                          </node>
                         </node>
                       </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="2he9CywSBjt" role="3cqZAp">
-                  <node concept="3y3z36" id="2he9CywSBju" role="3clFbw">
-                    <node concept="37vLTw" id="2he9CywSBjv" role="3uHU7B">
-                      <ref role="3cqZAo" node="2he9CywSBjn" resolve="aspectDescriptor" />
-                    </node>
-                    <node concept="10Nm6u" id="2he9CywSBjw" role="3uHU7w" />
-                  </node>
-                  <node concept="3clFbS" id="2he9CywSBjx" role="3clFbx">
-                    <node concept="2Gpval" id="2he9CywSBjy" role="3cqZAp">
-                      <node concept="2GrKxI" id="2he9CywSBjz" role="2Gsz3X">
-                        <property role="TrG5h" value="editor" />
+                    <node concept="3clFbJ" id="2he9CywSBjt" role="3cqZAp">
+                      <node concept="3y3z36" id="2he9CywSBju" role="3clFbw">
+                        <node concept="37vLTw" id="2he9CywSBjv" role="3uHU7B">
+                          <ref role="3cqZAo" node="2he9CywSBjn" resolve="aspectDescriptor" />
+                        </node>
+                        <node concept="10Nm6u" id="2he9CywSBjw" role="3uHU7w" />
                       </node>
-                      <node concept="3clFbS" id="2he9CywSBj$" role="2LFqv$">
-                        <node concept="3clFbF" id="2he9CywSBj_" role="3cqZAp">
-                          <node concept="2OqwBi" id="2he9CywSBjA" role="3clFbG">
-                            <node concept="37vLTw" id="2he9CywSBjB" role="2Oq$k0">
-                              <ref role="3cqZAo" node="2he9CywPU_u" resolve="resultSet" />
+                      <node concept="3clFbS" id="2he9CywSBjx" role="3clFbx">
+                        <node concept="2Gpval" id="2he9CywSBjy" role="3cqZAp">
+                          <node concept="2GrKxI" id="2he9CywSBjz" role="2Gsz3X">
+                            <property role="TrG5h" value="editor" />
+                          </node>
+                          <node concept="3clFbS" id="2he9CywSBj$" role="2LFqv$">
+                            <node concept="3clFbF" id="2he9CywSBj_" role="3cqZAp">
+                              <node concept="2OqwBi" id="2he9CywSBjA" role="3clFbG">
+                                <node concept="37vLTw" id="2he9CywSBjB" role="2Oq$k0">
+                                  <ref role="3cqZAo" node="2he9CywPU_u" resolve="resultSet" />
+                                </node>
+                                <node concept="liA8E" id="2he9CywSBjC" role="2OqNvi">
+                                  <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
+                                  <node concept="2GrUjf" id="2he9CywSBjD" role="37wK5m">
+                                    <ref role="2Gs0qQ" node="2he9CywSBjz" resolve="editor" />
+                                  </node>
+                                </node>
+                              </node>
                             </node>
-                            <node concept="liA8E" id="2he9CywSBjC" role="2OqNvi">
-                              <ref role="37wK5l" to="k7g3:~Set.add(java.lang.Object):boolean" resolve="add" />
-                              <node concept="2GrUjf" id="2he9CywSBjD" role="37wK5m">
-                                <ref role="2Gs0qQ" node="2he9CywSBjz" resolve="editor" />
+                          </node>
+                          <node concept="2OqwBi" id="2he9CywSBjE" role="2GsD0m">
+                            <node concept="37vLTw" id="2he9CywSBjF" role="2Oq$k0">
+                              <ref role="3cqZAo" node="2he9CywSBjn" resolve="aspectDescriptor" />
+                            </node>
+                            <node concept="liA8E" id="2he9CywSBjG" role="2OqNvi">
+                              <ref role="37wK5l" to="htwh:~EditorAspectDescriptor.getEditors(jetbrains.mps.smodel.runtime.ConceptDescriptor):java.util.Collection" resolve="getEditors" />
+                              <node concept="37vLTw" id="2he9CywSCQQ" role="37wK5m">
+                                <ref role="3cqZAo" node="2he9CywPJCy" resolve="concept" />
                               </node>
                             </node>
                           </node>
                         </node>
                       </node>
-                      <node concept="2OqwBi" id="2he9CywSBjE" role="2GsD0m">
-                        <node concept="37vLTw" id="2he9CywSBjF" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2he9CywSBjn" resolve="aspectDescriptor" />
-                        </node>
-                        <node concept="liA8E" id="2he9CywSBjG" role="2OqNvi">
-                          <ref role="37wK5l" to="htwh:~EditorAspectDescriptor.getEditors(jetbrains.mps.smodel.runtime.ConceptDescriptor):java.util.Collection" resolve="getEditors" />
-                          <node concept="37vLTw" id="2he9CywSCQQ" role="37wK5m">
-                            <ref role="3cqZAo" node="2he9CywPJCy" resolve="concept" />
-                          </node>
-                        </node>
-                      </node>
                     </node>
                   </node>
                 </node>
               </node>
+            </node>
+          </node>
+          <node concept="3y3z36" id="2BTg15BqHNo" role="3clFbw">
+            <node concept="10Nm6u" id="2BTg15BqI7Q" role="3uHU7w" />
+            <node concept="37vLTw" id="2BTg15BqHue" role="3uHU7B">
+              <ref role="3cqZAo" node="2he9CywSBj6" resolve="language" />
             </node>
           </node>
         </node>
