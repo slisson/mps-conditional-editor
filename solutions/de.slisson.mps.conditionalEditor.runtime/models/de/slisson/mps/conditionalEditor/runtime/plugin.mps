@@ -109,7 +109,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
@@ -266,24 +265,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="2he9CywIBCt" role="3cqZAp" />
-        <node concept="3clFbF" id="2he9CywJvqo" role="3cqZAp">
-          <node concept="2YIFZM" id="2he9CywJvqp" role="3clFbG">
-            <ref role="1Pybhc" to="fdaf:2he9CywHW6P" resolve="ConditionalEditors" />
-            <ref role="37wK5l" to="fdaf:2he9CywJn4N" resolve="setInstance" />
-            <node concept="2ShNRf" id="2he9CywJvzv" role="37wK5m">
-              <node concept="1pGfFk" id="2he9CywJvzu" role="2ShVmc">
-                <ref role="37wK5l" to="fdaf:2he9CywI52r" resolve="ConditionalEditors" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="2he9CywSvqV" role="3cqZAp">
-          <node concept="2YIFZM" id="2he9CywSxQy" role="3clFbG">
-            <ref role="37wK5l" to="fdaf:2he9CywSwIK" resolve="getInstance" />
-            <ref role="1Pybhc" to="fdaf:2he9CywPBwd" resolve="EditorRegistryCache" />
-          </node>
-        </node>
       </node>
     </node>
     <node concept="2uRRBN" id="2vJRo8g$$y0" role="2uRRB_">
@@ -315,13 +296,6 @@
           </node>
         </node>
         <node concept="3clFbH" id="2he9CywJahe" role="3cqZAp" />
-        <node concept="3clFbF" id="2he9CywJaot" role="3cqZAp">
-          <node concept="2YIFZM" id="2he9CywJvon" role="3clFbG">
-            <ref role="37wK5l" to="fdaf:2he9CywJn4N" resolve="setInstance" />
-            <ref role="1Pybhc" to="fdaf:2he9CywHW6P" resolve="ConditionalEditors" />
-            <node concept="10Nm6u" id="2he9CywJvpr" role="37wK5m" />
-          </node>
-        </node>
         <node concept="3clFbF" id="2he9CywSy5z" role="3cqZAp">
           <node concept="2OqwBi" id="2he9CywSya3" role="3clFbG">
             <node concept="2YIFZM" id="2he9CywSy7Q" role="2Oq$k0">
