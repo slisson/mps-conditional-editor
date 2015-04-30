@@ -230,6 +230,15 @@
                         </node>
                       </node>
                       <node concept="3clFbS" id="2vJRo8g$$xP" role="3clF47">
+                        <node concept="3clFbF" id="4oPNjd9AlyT" role="3cqZAp">
+                          <node concept="2YIFZM" id="4oPNjd9AlzS" role="3clFbG">
+                            <ref role="37wK5l" to="fdaf:4oPNjd9_A8D" resolve="install" />
+                            <ref role="1Pybhc" to="fdaf:4oPNjd9$7gX" resolve="ConditionalEditorUpdaterImpl" />
+                            <node concept="37vLTw" id="4oPNjd9Al$R" role="37wK5m">
+                              <ref role="3cqZAo" node="2vJRo8g$$xM" resolve="editorComponent" />
+                            </node>
+                          </node>
+                        </node>
                         <node concept="3clFbF" id="2vJRo8g$$xQ" role="3cqZAp">
                           <node concept="2YIFZM" id="2vJRo8g$$xR" role="3clFbG">
                             <ref role="37wK5l" to="fdaf:2vJRo8gzRlc" resolve="install" />
@@ -305,6 +314,12 @@
             <node concept="liA8E" id="2he9CywSyw$" role="2OqNvi">
               <ref role="37wK5l" to="fdaf:2he9CywRWvd" resolve="dispose" />
             </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4oPNjd9CYVe" role="3cqZAp">
+          <node concept="2YIFZM" id="4oPNjd9CYXh" role="3clFbG">
+            <ref role="37wK5l" to="fdaf:4oPNjd9CsPT" resolve="uninstallAll" />
+            <ref role="1Pybhc" to="fdaf:4oPNjd9$7gX" resolve="ConditionalEditorUpdaterImpl" />
           </node>
         </node>
       </node>
