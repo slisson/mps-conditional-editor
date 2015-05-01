@@ -29,6 +29,7 @@
     <import index="xqpa" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.lang.reflect(JDK/java.lang.reflect@java_stub)" />
     <import index="a7z3" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.smodel.adapter.ids(MPS.Core/jetbrains.mps.smodel.adapter.ids@java_stub)" />
     <import index="6l7f" ref="1ed103c3-3aa6-49b7-9c21-6765ee11f224/f:java_stub#1ed103c3-3aa6-49b7-9c21-6765ee11f224#jetbrains.mps.nodeEditor.updater(MPS.Editor/jetbrains.mps.nodeEditor.updater@java_stub)" />
+    <import index="ycmz" ref="r:af3e1a90-527b-4262-8066-857208a4f4fb(de.slisson.mps.reflection.runtime)" />
     <import index="z8iw" ref="r:dfdf3542-dbcf-43df-870a-3c3504b3c840(jetbrains.mps.baseLanguage.collections.custom)" implicit="true" />
   </imports>
   <registry>
@@ -145,6 +146,7 @@
       <concept id="1068498886292" name="jetbrains.mps.baseLanguage.structure.ParameterDeclaration" flags="ir" index="37vLTG" />
       <concept id="1068498886294" name="jetbrains.mps.baseLanguage.structure.AssignmentExpression" flags="nn" index="37vLTI" />
       <concept id="1225271177708" name="jetbrains.mps.baseLanguage.structure.StringType" flags="in" index="17QB3L" />
+      <concept id="1225271283259" name="jetbrains.mps.baseLanguage.structure.NPEEqualsExpression" flags="nn" index="17R0WA" />
       <concept id="4972933694980447171" name="jetbrains.mps.baseLanguage.structure.BaseVariableDeclaration" flags="ng" index="19Szcq">
         <child id="5680397130376446158" name="type" index="1tU5fm" />
       </concept>
@@ -3422,11 +3424,172 @@
       <node concept="3clFbS" id="3mjtVpITzCP" role="3clF47">
         <node concept="SfApY" id="3mjtVpITFeY" role="3cqZAp">
           <node concept="3clFbS" id="3mjtVpITFf0" role="SfCbr">
+            <node concept="3cpWs8" id="3mjtVpIWyPW" role="3cqZAp">
+              <node concept="3cpWsn" id="3mjtVpIWyPX" role="3cpWs9">
+                <property role="TrG5h" value="mlcFrom" />
+                <node concept="3uibUv" id="3mjtVpIWyPO" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                </node>
+                <node concept="2YIFZM" id="3mjtVpIWyPY" role="33vP2m">
+                  <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
+                  <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                  <node concept="2OqwBi" id="3mjtVpIWyPZ" role="37wK5m">
+                    <node concept="37vLTw" id="3mjtVpIWyQ0" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3mjtVpIT$cT" resolve="from" />
+                    </node>
+                    <node concept="liA8E" id="3mjtVpIWyQ1" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3mjtVpIWyQ2" role="37wK5m">
+                    <ref role="3cqZAo" node="3mjtVpIT$cT" resolve="from" />
+                  </node>
+                  <node concept="Xl_RD" id="3mjtVpIWyQ3" role="37wK5m">
+                    <property role="Xl_RC" value="myModelListenersController" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3cpWs8" id="3mjtVpIWB6P" role="3cqZAp">
+              <node concept="3cpWsn" id="3mjtVpIWB6Q" role="3cpWs9">
+                <property role="TrG5h" value="mlcTo" />
+                <node concept="3uibUv" id="3mjtVpIWB6R" role="1tU5fm">
+                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                </node>
+                <node concept="2YIFZM" id="3mjtVpIWB6S" role="33vP2m">
+                  <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
+                  <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                  <node concept="2OqwBi" id="3mjtVpIWB6T" role="37wK5m">
+                    <node concept="37vLTw" id="3mjtVpIWBuu" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3mjtVpIT$cT" resolve="from" />
+                    </node>
+                    <node concept="liA8E" id="3mjtVpIWB6V" role="2OqNvi">
+                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                    </node>
+                  </node>
+                  <node concept="37vLTw" id="3mjtVpIWBzc" role="37wK5m">
+                    <ref role="3cqZAo" node="3mjtVpIT$i1" resolve="to" />
+                  </node>
+                  <node concept="Xl_RD" id="3mjtVpIWB6X" role="37wK5m">
+                    <property role="Xl_RC" value="myModelListenersController" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3mjtVpIWCwi" role="3cqZAp">
+              <node concept="2YIFZM" id="3mjtVpIWCIu" role="3clFbG">
+                <ref role="37wK5l" to="ycmz:7moa1g0U01E" resolve="callMethod" />
+                <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                <node concept="2OqwBi" id="3mjtVpIWCQc" role="37wK5m">
+                  <node concept="37vLTw" id="3mjtVpIWCMd" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3mjtVpIWB6Q" resolve="mlcTo" />
+                  </node>
+                  <node concept="liA8E" id="3mjtVpIWD0_" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3mjtVpIWD9G" role="37wK5m">
+                  <ref role="3cqZAo" node="3mjtVpIWB6Q" resolve="mlcTo" />
+                </node>
+                <node concept="Xl_RD" id="3mjtVpIWDje" role="37wK5m">
+                  <property role="Xl_RC" value="dispose" />
+                </node>
+                <node concept="2ShNRf" id="3mjtVpIWDSn" role="37wK5m">
+                  <node concept="3$_iS1" id="3mjtVpIWDSl" role="2ShVmc">
+                    <node concept="3uibUv" id="3mjtVpIWDSm" role="3$_nBY">
+                      <ref role="3uigEE" to="e2lb:~Class" resolve="Class" />
+                    </node>
+                    <node concept="3$GHV9" id="3mjtVpIWDZ8" role="3$GQph">
+                      <node concept="3cmrfG" id="3mjtVpIWE40" role="3$I4v7">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="2ShNRf" id="3mjtVpIWEeN" role="37wK5m">
+                  <node concept="3$_iS1" id="3mjtVpIWEeL" role="2ShVmc">
+                    <node concept="3uibUv" id="3mjtVpIWEeM" role="3$_nBY">
+                      <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
+                    </node>
+                    <node concept="3$GHV9" id="3mjtVpIWEky" role="3$GQph">
+                      <node concept="3cmrfG" id="3mjtVpIWEpO" role="3$I4v7">
+                        <property role="3cmrfH" value="0" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="3mjtVpIWzzi" role="3cqZAp">
+              <node concept="2YIFZM" id="3mjtVpIWzPp" role="3clFbG">
+                <ref role="37wK5l" to="ycmz:7moa1g0RG0k" resolve="writeField" />
+                <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                <node concept="2OqwBi" id="3mjtVpIWzWB" role="37wK5m">
+                  <node concept="37vLTw" id="3mjtVpIWzVJ" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3mjtVpIWyPX" resolve="mlcFrom" />
+                  </node>
+                  <node concept="liA8E" id="3mjtVpIW$70" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="3mjtVpIW$lW" role="37wK5m">
+                  <ref role="3cqZAo" node="3mjtVpIWyPX" resolve="mlcFrom" />
+                </node>
+                <node concept="Xl_RD" id="3mjtVpIW$_u" role="37wK5m">
+                  <property role="Xl_RC" value="myUpdater" />
+                </node>
+                <node concept="37vLTw" id="3mjtVpIW_i6" role="37wK5m">
+                  <ref role="3cqZAo" node="3mjtVpIT$i1" resolve="to" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6U7y_4FyZeb" role="3cqZAp">
+              <node concept="2YIFZM" id="6U7y_4FyZvc" role="3clFbG">
+                <ref role="37wK5l" to="ycmz:7moa1g0RG0k" resolve="writeField" />
+                <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
+                <node concept="2OqwBi" id="6U7y_4FyZB1" role="37wK5m">
+                  <node concept="37vLTw" id="6U7y_4FyZyE" role="2Oq$k0">
+                    <ref role="3cqZAo" node="3mjtVpIT$cT" resolve="from" />
+                  </node>
+                  <node concept="liA8E" id="6U7y_4FyZQA" role="2OqNvi">
+                    <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
+                  </node>
+                </node>
+                <node concept="37vLTw" id="6U7y_4Fz00g" role="37wK5m">
+                  <ref role="3cqZAo" node="3mjtVpIT$i1" resolve="to" />
+                </node>
+                <node concept="Xl_RD" id="6U7y_4Fz0aj" role="37wK5m">
+                  <property role="Xl_RC" value="myModelListenersController" />
+                </node>
+                <node concept="37vLTw" id="6U7y_4Fzgg2" role="37wK5m">
+                  <ref role="3cqZAo" node="3mjtVpIWyPX" resolve="mlcFrom" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="58rBIpDSVgF" role="3cqZAp" />
             <node concept="2Gpval" id="3mjtVpITAf4" role="3cqZAp">
               <node concept="2GrKxI" id="3mjtVpITAf5" role="2Gsz3X">
                 <property role="TrG5h" value="field" />
               </node>
               <node concept="3clFbS" id="3mjtVpITAf6" role="2LFqv$">
+                <node concept="3clFbJ" id="58rBIpDT6TT" role="3cqZAp">
+                  <node concept="3clFbS" id="58rBIpDT6TV" role="3clFbx">
+                    <node concept="3N13vt" id="58rBIpDTjX4" role="3cqZAp" />
+                  </node>
+                  <node concept="17R0WA" id="58rBIpDTfwJ" role="3clFbw">
+                    <node concept="2OqwBi" id="58rBIpDTbDv" role="3uHU7B">
+                      <node concept="2GrUjf" id="58rBIpDT7tm" role="2Oq$k0">
+                        <ref role="2Gs0qQ" node="3mjtVpITAf5" resolve="field" />
+                      </node>
+                      <node concept="liA8E" id="58rBIpDTcIs" role="2OqNvi">
+                        <ref role="37wK5l" to="xqpa:~Field.getName():java.lang.String" resolve="getName" />
+                      </node>
+                    </node>
+                    <node concept="Xl_RD" id="58rBIpDTjrL" role="3uHU7w">
+                      <property role="Xl_RC" value="myModelListenersController" />
+                    </node>
+                  </node>
+                </node>
                 <node concept="3clFbJ" id="3mjtVpIUGyU" role="3cqZAp">
                   <node concept="3clFbS" id="3mjtVpIUGyW" role="3clFbx">
                     <node concept="3clFbF" id="3mjtVpITAko" role="3cqZAp">
@@ -3497,6 +3660,8 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbH" id="3mjtVpIWs9h" role="3cqZAp" />
+            <node concept="3clFbH" id="3mjtVpIWvZa" role="3cqZAp" />
           </node>
           <node concept="TDmWw" id="3mjtVpITFf1" role="TEbGg">
             <node concept="3clFbS" id="3mjtVpITFf3" role="TDEfX">
@@ -3519,6 +3684,7 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbH" id="3mjtVpIWu_I" role="3cqZAp" />
       </node>
       <node concept="37vLTG" id="3mjtVpIT$cT" role="3clF46">
         <property role="TrG5h" value="from" />
