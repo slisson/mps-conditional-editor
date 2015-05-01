@@ -19,6 +19,12 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
+      <concept id="1227096774658" name="jetbrains.mps.lang.typesystem.structure.MessageStatement" flags="ng" index="2OEH$v">
+        <child id="1227096802790" name="nodeToReport" index="2OEOjV" />
+      </concept>
       <concept id="1195213580585" name="jetbrains.mps.lang.typesystem.structure.AbstractCheckingRule" flags="ig" index="18hYwZ">
         <property id="1195213689297" name="overrides" index="18ip37" />
         <child id="1195213635060" name="body" index="18ibNy" />
@@ -30,11 +36,8 @@
       <concept id="1174648085619" name="jetbrains.mps.lang.typesystem.structure.AbstractRule" flags="ng" index="1YuPPy">
         <child id="1174648101952" name="applicableNode" index="1YuTPh" />
       </concept>
-    </language>
-    <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
-      <concept id="1167227138527" name="jetbrains.mps.baseLanguage.logging.structure.LogStatement" flags="nn" index="34ab3g">
-        <property id="1167245565795" name="severity" index="35gtTG" />
-        <child id="1167227463056" name="logExpression" index="34bqiv" />
+      <concept id="1174650418652" name="jetbrains.mps.lang.typesystem.structure.ApplicableNodeReference" flags="nn" index="1YBJjd">
+        <reference id="1174650432090" name="applicableNode" index="1YBMHb" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -47,9 +50,11 @@
     <property role="TrG5h" value="checkNothing" />
     <property role="18ip37" value="true" />
     <node concept="3clFbS" id="2vJRo8gBgwe" role="18ibNy">
-      <node concept="34ab3g" id="2h_ff8ZuGiW" role="3cqZAp">
-        <property role="35gtTG" value="warn" />
-        <node concept="Xl_RD" id="2h_ff8ZuGiY" role="34bqiv">
+      <node concept="a7r0C" id="6Y0V2RJa2z$" role="3cqZAp">
+        <node concept="1YBJjd" id="6Y0V2RJa50m" role="2OEOjV">
+          <ref role="1YBMHb" node="2vJRo8gBgx3" resolve="conditionalConceptEditorDeclaration" />
+        </node>
+        <node concept="Xl_RD" id="6Y0V2RJa506" role="a7wSD">
           <property role="Xl_RC" value="Conditional editors are not working in MPS 3.2" />
         </node>
       </node>
