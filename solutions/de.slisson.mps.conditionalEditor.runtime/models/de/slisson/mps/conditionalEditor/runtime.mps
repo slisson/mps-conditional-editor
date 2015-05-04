@@ -260,13 +260,6 @@
         <child id="1201186121363" name="typeParameter" index="2Ghqu4" />
       </concept>
     </language>
-    <language id="63650c59-16c8-498a-99c8-005c7ee9515d" name="jetbrains.mps.lang.access">
-      <concept id="8974276187400348173" name="jetbrains.mps.lang.access.structure.CommandClosureLiteral" flags="nn" index="1QHqEC" />
-      <concept id="8974276187400348170" name="jetbrains.mps.lang.access.structure.BaseExecuteCommandStatement" flags="nn" index="1QHqEJ">
-        <child id="8974276187400348171" name="commandClosureLiteral" index="1QHqEI" />
-      </concept>
-      <concept id="8974276187400348181" name="jetbrains.mps.lang.access.structure.ExecuteLightweightCommandStatement" flags="nn" index="1QHqEK" />
-    </language>
     <language id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures">
       <concept id="1199542442495" name="jetbrains.mps.baseLanguage.closures.structure.FunctionType" flags="in" index="1ajhzC">
         <child id="1199542457201" name="resultType" index="1ajl9A" />
@@ -429,27 +422,6 @@
                     <ref role="37wK5l" node="2vJRo8guYfy" resolve="ConditionalEditorCellFactory" />
                     <node concept="37vLTw" id="4oPNjd9C4Er" role="37wK5m">
                       <ref role="3cqZAo" node="4X6FKySdgOc" resolve="editorContext" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-            <node concept="1QHqEK" id="5tamzzz$XcA" role="3cqZAp">
-              <node concept="1QHqEC" id="5tamzzz$XcC" role="1QHqEI">
-                <node concept="3clFbS" id="5tamzzz$XcE" role="1bW5cS">
-                  <node concept="3clFbF" id="4X6FKySj_EH" role="3cqZAp">
-                    <node concept="2OqwBi" id="4X6FKySjAdJ" role="3clFbG">
-                      <node concept="2OqwBi" id="4X6FKySj_He" role="2Oq$k0">
-                        <node concept="37vLTw" id="4X6FKySj_EG" role="2Oq$k0">
-                          <ref role="3cqZAo" node="4X6FKySdgOc" resolve="editorContext" />
-                        </node>
-                        <node concept="liA8E" id="4X6FKySjA2Y" role="2OqNvi">
-                          <ref role="37wK5l" to="srng:~EditorContext.getEditorComponent():jetbrains.mps.openapi.editor.EditorComponent" resolve="getEditorComponent" />
-                        </node>
-                      </node>
-                      <node concept="liA8E" id="4X6FKySjAj7" role="2OqNvi">
-                        <ref role="37wK5l" to="srng:~EditorComponent.rebuildEditorContent():void" resolve="rebuildEditorContent" />
-                      </node>
                     </node>
                   </node>
                 </node>
