@@ -4,13 +4,15 @@
   <attribute name="concise" value="true" />
   <languages>
     <use id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor" version="-1" />
-    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="-1" />
+    <use id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
     <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
     <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
+    <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
+    <import index="ye5w" ref="r:6c3a5ff5-b652-48a4-80a3-0e283d57df4d(de.slisson.mps.conditionalEditor.demolang.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="b8bb702e-43ed-4090-a902-d180d3e5f292" name="de.slisson.mps.conditionalEditor">
@@ -43,6 +45,9 @@
       </concept>
       <concept id="5944657839003601246" name="jetbrains.mps.lang.editor.structure.ConceptEditorHintDeclaration" flags="ig" index="2BsEeg">
         <property id="168363875802087287" name="showInUI" index="2gpH_U" />
+      </concept>
+      <concept id="1078939183254" name="jetbrains.mps.lang.editor.structure.CellModel_Component" flags="sg" stub="3162947552742194261" index="PMmxH">
+        <reference id="1078939183255" name="editorComponent" index="PMmxG" />
       </concept>
       <concept id="1235728439575" name="jetbrains.mps.lang.editor.structure.BaseLineCell" flags="ln" index="2R9Tw8" />
       <concept id="1186403694788" name="jetbrains.mps.lang.editor.structure.ColorStyleClassItem" flags="ln" index="VaVBg">
@@ -368,6 +373,36 @@
     <node concept="2aJ2om" id="74EJJMr9FKd" role="CpUAK">
       <ref role="2$4xQ3" node="74EJJMr9EoS" resolve="conditonalEditorDemo" />
     </node>
+    <node concept="3EZMnI" id="6eakByRhY1C" role="6VMZX">
+      <node concept="Rtstu" id="6eakByRhYng" role="3EZMnx" />
+      <node concept="3F0ifn" id="6eakByRhYhd" role="3EZMnx" />
+      <node concept="1HlG4h" id="6eakByRhY7z" role="3EZMnx">
+        <node concept="1HfYo3" id="6eakByRhY7$" role="1HlULh">
+          <node concept="3TQlhw" id="6eakByRhY7_" role="1Hhtcw">
+            <node concept="3clFbS" id="6eakByRhY7A" role="2VODD2">
+              <node concept="3clFbF" id="6eakByRhY7B" role="3cqZAp">
+                <node concept="3cpWs3" id="6eakByRhY7C" role="3clFbG">
+                  <node concept="Xl_RD" id="6eakByRhY7D" role="3uHU7w">
+                    <property role="Xl_RC" value="" />
+                  </node>
+                  <node concept="2OqwBi" id="6eakByRhY7E" role="3uHU7B">
+                    <node concept="pncrf" id="6eakByRhY7F" role="2Oq$k0" />
+                    <node concept="3JvlWi" id="6eakByRhY7G" role="2OqNvi" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="VPM3Z" id="6eakByRhY7H" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="VechU" id="6eakByRhY7I" role="3F10Kt">
+          <property role="Vb096" value="lightGray" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="6eakByRhY1D" role="2iSdaV" />
+    </node>
   </node>
   <node concept="312cEu" id="7klUZA70Lbw">
     <property role="TrG5h" value="ExpressionTypeInfo" />
@@ -388,6 +423,18 @@
     <node concept="2BsEeg" id="74EJJMr9EoS" role="2ABdcP">
       <property role="2gpH_U" value="true" />
       <property role="TrG5h" value="conditonalEditorDemo" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="6eakByRhOlE">
+    <ref role="1XX52x" to="ye5w:6eakByRhOlw" resolve="ExpressionWithInspector" />
+    <node concept="PMmxH" id="6eakByRhOn9" role="2wV5jI">
+      <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+    </node>
+    <node concept="3EZMnI" id="6eakByRhOne" role="6VMZX">
+      <node concept="l2Vlx" id="6eakByRhOnf" role="2iSdaV" />
+      <node concept="3F0ifn" id="6eakByRhOno" role="3EZMnx">
+        <property role="3F0ifm" value="inspector cell" />
+      </node>
     </node>
   </node>
 </model>
