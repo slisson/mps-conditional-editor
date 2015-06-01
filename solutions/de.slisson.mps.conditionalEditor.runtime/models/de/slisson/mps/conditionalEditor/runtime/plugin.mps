@@ -271,6 +271,12 @@
             </node>
           </node>
         </node>
+        <node concept="3clFbF" id="3gXDBnMKzxb" role="3cqZAp">
+          <node concept="2YIFZM" id="3gXDBnMKzC0" role="3clFbG">
+            <ref role="37wK5l" to="fdaf:3gXDBnMK8$s" resolve="installInExisting" />
+            <ref role="1Pybhc" to="fdaf:2vJRo8guY5_" resolve="ConditionalEditorCellFactory" />
+          </node>
+        </node>
       </node>
     </node>
     <node concept="2uRRBN" id="2vJRo8g$$y0" role="2uRRB_">
