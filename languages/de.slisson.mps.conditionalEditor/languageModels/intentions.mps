@@ -99,11 +99,11 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
-      <concept id="5253134957341870583" name="jetbrains.mps.lang.smodel.structure.PropertyNameRefExpression" flags="nn" index="pqAIu">
-        <reference id="5253134957341870585" name="propertyDeclaration" index="pqAIg" />
-        <reference id="5253134957341870584" name="conceptDeclaration" index="pqAIh" />
-      </concept>
       <concept id="1138757581985" name="jetbrains.mps.lang.smodel.structure.Link_SetNewChildOperation" flags="nn" index="zfrQC" />
+      <concept id="2644386474302386080" name="jetbrains.mps.lang.smodel.structure.PropertyIdRefExpression" flags="nn" index="355D3s">
+        <reference id="2644386474302386081" name="conceptDeclaration" index="355D3t" />
+        <reference id="2644386474302386082" name="propertyDeclaration" index="355D3u" />
+      </concept>
       <concept id="8339862546319741524" name="jetbrains.mps.lang.smodel.structure.ConceptFqNameRefExpression" flags="nn" index="3nh3qo">
         <reference id="8339862546319741525" name="conceptDeclaration" index="3nh3qp" />
       </concept>
@@ -282,10 +282,10 @@
               </node>
             </node>
             <node concept="liA8E" id="7klUZA6VEY1" role="2OqNvi">
-              <ref role="37wK5l" to="ec5l:~SNode.setProperty(java.lang.String,java.lang.String):void" resolve="setProperty" />
-              <node concept="pqAIu" id="7klUZA6VF2t" role="37wK5m">
-                <ref role="pqAIh" to="91fu:2vJRo8gA3oP" resolve="ConditionalConceptEditorDeclaration" />
-                <ref role="pqAIg" to="91fu:2vJRo8gAA$B" resolve="priority" />
+              <ref role="37wK5l" to="ec5l:~SNode.setProperty(org.jetbrains.mps.openapi.language.SProperty,java.lang.String):void" resolve="setProperty" />
+              <node concept="355D3s" id="7wXnfGEaD9x" role="37wK5m">
+                <ref role="355D3t" to="91fu:2vJRo8gA3oP" resolve="ConditionalConceptEditorDeclaration" />
+                <ref role="355D3u" to="91fu:2vJRo8gAA$B" resolve="priority" />
               </node>
               <node concept="10Nm6u" id="7klUZA6VFoU" role="37wK5m" />
             </node>
