@@ -32,6 +32,7 @@
     <import index="ua2a" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.typesystem.inference(MPS.Core/jetbrains.mps.typesystem.inference@java_stub)" />
     <import index="wqua" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/f:java_stub#6ed54515-acc8-4d1e-a16c-9fd6cfe951ea#jetbrains.mps.classloading(MPS.Core/jetbrains.mps.classloading@java_stub)" />
     <import index="86um" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/f:java_stub#742f6602-5a2f-4313-aa6e-ae1cd4ffdc61#jetbrains.mps.ide(MPS.Platform/jetbrains.mps.ide@java_stub)" />
+    <import index="kvq8" ref="r:2e938759-cfd0-47cd-9046-896d85204f59(de.slisson.mps.hacks.editor)" />
   </imports>
   <registry>
     <language id="654422bf-e75f-44dc-936d-188890a746ce" name="de.slisson.mps.reflection">
@@ -505,103 +506,44 @@
         </node>
         <node concept="2Gpval" id="3gXDBnMKecN" role="3cqZAp">
           <node concept="2GrKxI" id="3gXDBnMKecO" role="2Gsz3X">
-            <property role="TrG5h" value="listener" />
+            <property role="TrG5h" value="editorComponent" />
           </node>
           <node concept="3clFbS" id="3gXDBnMKecP" role="2LFqv$">
-            <node concept="3cpWs8" id="3gXDBnMKekx" role="3cqZAp">
-              <node concept="3cpWsn" id="3gXDBnMKeky" role="3cpWs9">
-                <property role="TrG5h" value="this0" />
-                <node concept="3uibUv" id="3gXDBnMKfsB" role="1tU5fm">
-                  <ref role="3uigEE" to="e2lb:~Object" resolve="Object" />
-                </node>
-                <node concept="2YIFZM" id="3gXDBnMKelX" role="33vP2m">
-                  <ref role="37wK5l" to="ycmz:7moa1g0RuMd" resolve="readField" />
-                  <ref role="1Pybhc" to="ycmz:7moa1g0QL5J" resolve="ReflectionUtil" />
-                  <node concept="2OqwBi" id="3gXDBnMKeo2" role="37wK5m">
-                    <node concept="2GrUjf" id="3gXDBnMKemM" role="2Oq$k0">
-                      <ref role="2Gs0qQ" node="3gXDBnMKecO" resolve="listener" />
-                    </node>
-                    <node concept="liA8E" id="3gXDBnMKf1z" role="2OqNvi">
-                      <ref role="37wK5l" to="e2lb:~Object.getClass():java.lang.Class" resolve="getClass" />
-                    </node>
-                  </node>
-                  <node concept="2GrUjf" id="3gXDBnMKfbc" role="37wK5m">
-                    <ref role="2Gs0qQ" node="3gXDBnMKecO" resolve="listener" />
-                  </node>
-                  <node concept="Xl_RD" id="3gXDBnMKfhj" role="37wK5m">
-                    <property role="Xl_RC" value="this$0" />
+            <node concept="3cpWs8" id="3gXDBnMMlq3" role="3cqZAp">
+              <node concept="3cpWsn" id="3gXDBnMMlq4" role="3cpWs9">
+                <property role="TrG5h" value="installed" />
+                <node concept="10P_77" id="3gXDBnMMlpN" role="1tU5fm" />
+                <node concept="1rXfSq" id="3gXDBnMMlq5" role="33vP2m">
+                  <ref role="37wK5l" node="2vJRo8gzRlc" resolve="install" />
+                  <node concept="2GrUjf" id="2WlJ6VKP2gW" role="37wK5m">
+                    <ref role="2Gs0qQ" node="3gXDBnMKecO" resolve="editorComponent" />
                   </node>
                 </node>
               </node>
             </node>
-            <node concept="3clFbJ" id="3gXDBnMKj19" role="3cqZAp">
-              <node concept="3clFbS" id="3gXDBnMKj1b" role="3clFbx">
-                <node concept="3cpWs8" id="3gXDBnMKQe0" role="3cqZAp">
-                  <node concept="3cpWsn" id="3gXDBnMKQe1" role="3cpWs9">
-                    <property role="TrG5h" value="editorComponent" />
-                    <node concept="3uibUv" id="3gXDBnMKQdV" role="1tU5fm">
-                      <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
+            <node concept="3clFbJ" id="3gXDBnMMlCy" role="3cqZAp">
+              <node concept="3clFbS" id="3gXDBnMMlC$" role="3clFbx">
+                <node concept="3clFbF" id="3gXDBnMMmtl" role="3cqZAp">
+                  <node concept="2OqwBi" id="3gXDBnMMmD$" role="3clFbG">
+                    <node concept="37vLTw" id="3gXDBnMMmtj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="3gXDBnMMlTt" resolve="componentsToUpdate" />
                     </node>
-                    <node concept="10QFUN" id="3gXDBnMKQe2" role="33vP2m">
-                      <node concept="3uibUv" id="3gXDBnMKQe3" role="10QFUM">
-                        <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
-                      </node>
-                      <node concept="37vLTw" id="3gXDBnMKQe4" role="10QFUP">
-                        <ref role="3cqZAo" node="3gXDBnMKeky" resolve="this0" />
+                    <node concept="TSZUe" id="3gXDBnMMnvc" role="2OqNvi">
+                      <node concept="2GrUjf" id="2WlJ6VKP2h6" role="25WWJ7">
+                        <ref role="2Gs0qQ" node="3gXDBnMKecO" resolve="editorComponent" />
                       </node>
                     </node>
-                  </node>
-                </node>
-                <node concept="3cpWs8" id="3gXDBnMMlq3" role="3cqZAp">
-                  <node concept="3cpWsn" id="3gXDBnMMlq4" role="3cpWs9">
-                    <property role="TrG5h" value="installed" />
-                    <node concept="10P_77" id="3gXDBnMMlpN" role="1tU5fm" />
-                    <node concept="1rXfSq" id="3gXDBnMMlq5" role="33vP2m">
-                      <ref role="37wK5l" node="2vJRo8gzRlc" resolve="install" />
-                      <node concept="37vLTw" id="3gXDBnMMlq6" role="37wK5m">
-                        <ref role="3cqZAo" node="3gXDBnMKQe1" resolve="editorComponent" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbJ" id="3gXDBnMMlCy" role="3cqZAp">
-                  <node concept="3clFbS" id="3gXDBnMMlC$" role="3clFbx">
-                    <node concept="3clFbF" id="3gXDBnMMmtl" role="3cqZAp">
-                      <node concept="2OqwBi" id="3gXDBnMMmD$" role="3clFbG">
-                        <node concept="37vLTw" id="3gXDBnMMmtj" role="2Oq$k0">
-                          <ref role="3cqZAo" node="3gXDBnMMlTt" resolve="componentsToUpdate" />
-                        </node>
-                        <node concept="TSZUe" id="3gXDBnMMnvc" role="2OqNvi">
-                          <node concept="37vLTw" id="3gXDBnMMnD_" role="25WWJ7">
-                            <ref role="3cqZAo" node="3gXDBnMKQe1" resolve="editorComponent" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="37vLTw" id="3gXDBnMMlHr" role="3clFbw">
-                    <ref role="3cqZAo" node="3gXDBnMMlq4" resolve="installed" />
                   </node>
                 </node>
               </node>
-              <node concept="2ZW3vV" id="3gXDBnMKjb0" role="3clFbw">
-                <node concept="3uibUv" id="3gXDBnMKje8" role="2ZW6by">
-                  <ref role="3uigEE" to="9a8:~EditorComponent" resolve="EditorComponent" />
-                </node>
-                <node concept="37vLTw" id="3gXDBnMKj7F" role="2ZW6bz">
-                  <ref role="3cqZAo" node="3gXDBnMKeky" resolve="this0" />
-                </node>
+              <node concept="37vLTw" id="3gXDBnMMlHr" role="3clFbw">
+                <ref role="3cqZAo" node="3gXDBnMMlq4" resolve="installed" />
               </node>
             </node>
           </node>
-          <node concept="2OqwBi" id="3gXDBnMKbiW" role="2GsD0m">
-            <node concept="2YIFZM" id="3gXDBnMKbi4" role="2Oq$k0">
-              <ref role="1Pybhc" to="9a8:~EditorSettings" resolve="EditorSettings" />
-              <ref role="37wK5l" to="9a8:~EditorSettings.getInstance():jetbrains.mps.nodeEditor.EditorSettings" resolve="getInstance" />
-            </node>
-            <node concept="1PnCL0" id="3gXDBnMKbru" role="2OqNvi">
-              <ref role="2Oxat5" to="9a8:~EditorSettings.myListeners" resolve="myListeners" />
-            </node>
+          <node concept="2YIFZM" id="2WlJ6VKP0AS" role="2GsD0m">
+            <ref role="37wK5l" to="kvq8:2WlJ6VKOSU7" resolve="findAllInstances" />
+            <ref role="1Pybhc" to="kvq8:2WlJ6VKOwRU" resolve="EditorComponentHacks" />
           </node>
         </node>
         <node concept="3clFbJ" id="3gXDBnMMp7u" role="3cqZAp">
