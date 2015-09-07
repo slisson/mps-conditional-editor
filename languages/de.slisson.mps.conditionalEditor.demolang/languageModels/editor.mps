@@ -8,8 +8,8 @@
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
-    <import index="1t7x" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.awt(JDK/java.awt@java_stub)" />
-    <import index="k7g3" ref="f:java_stub#6354ebe7-c22a-4a0f-ac54-50b52ab9b065#java.util(JDK/java.util@java_stub)" />
+    <import index="z60i" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.awt(JDK/)" />
+    <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpco" ref="r:00000000-0000-4000-0000-011c89590284(jetbrains.mps.lang.core.editor)" implicit="true" />
     <import index="ye5w" ref="r:6c3a5ff5-b652-48a4-80a3-0e283d57df4d(de.slisson.mps.conditionalEditor.demolang.structure)" implicit="true" />
@@ -220,7 +220,7 @@
             <node concept="3clFbF" id="7klUZA6Y4DP" role="3cqZAp">
               <node concept="2ShNRf" id="7klUZA6Y4DN" role="3clFbG">
                 <node concept="1pGfFk" id="7klUZA6Y5Rt" role="2ShVmc">
-                  <ref role="37wK5l" to="1t7x:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
+                  <ref role="37wK5l" to="z60i:~Color.&lt;init&gt;(int,int,int,int)" resolve="Color" />
                   <node concept="3cmrfG" id="7klUZA6Y_XU" role="37wK5m">
                     <property role="3cmrfH" value="0" />
                   </node>
@@ -370,9 +370,6 @@
         <property role="VOm3f" value="true" />
       </node>
     </node>
-    <node concept="2aJ2om" id="74EJJMr9FKd" role="CpUAK">
-      <ref role="2$4xQ3" node="74EJJMr9EoS" resolve="conditonalEditorDemo" />
-    </node>
     <node concept="3EZMnI" id="6eakByRhY1C" role="6VMZX">
       <node concept="Rtstu" id="6eakByRhYng" role="3EZMnx" />
       <node concept="3F0ifn" id="6eakByRhYhd" role="3EZMnx" />
@@ -412,9 +409,7 @@
       <property role="TrG5h" value="showTypeInfo" />
       <node concept="10P_77" id="7klUZA70Lcw" role="1tU5fm" />
       <node concept="3Tm1VV" id="7klUZA70UTe" role="1B3o_S" />
-      <node concept="3clFbT" id="7klUZA70UjK" role="33vP2m">
-        <property role="3clFbU" value="true" />
-      </node>
+      <node concept="3clFbT" id="7klUZA70UjK" role="33vP2m" />
     </node>
     <node concept="3Tm1VV" id="7klUZA70Lbx" role="1B3o_S" />
   </node>

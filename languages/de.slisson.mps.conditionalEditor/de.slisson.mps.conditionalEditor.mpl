@@ -22,6 +22,8 @@
         <dependency reexport="false">1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)</dependency>
         <dependency reexport="false">9d368018-badb-4569-9884-4b463e4f6696(de.slisson.mps.conditionalEditor.runtime)</dependency>
         <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
+        <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
+        <dependency reexport="false">5474e4cd-6621-4b33-a39a-75552543ba57(de.slisson.mps.conditionalEditor.hints)</dependency>
       </dependencies>
       <usedLanguages>
         <usedLanguage>b8bb702e-43ed-4090-a902-d180d3e5f292(de.slisson.mps.conditionalEditor)</usedLanguage>
@@ -64,6 +66,20 @@
             <generator generatorUID="0647eca7-da98-422a-8a8b-6ebc0bd014ea(jetbrains.mps.lang.editor#1129914002149)" />
             <external-mapping>
               <mapping-node modelUID="r:00000000-0000-4000-0000-011c8959029f(jetbrains.mps.lang.editor.generator.baseLanguage.template.main@generator)" nodeID="1096629760203" />
+            </external-mapping>
+          </lesser-priority-mapping>
+        </mapping-priority-rule>
+        <mapping-priority-rule kind="strictly_before">
+          <greater-priority-mapping>
+            <generator generatorUID="4c7e6b88-d386-40ea-a53c-f652375c21a9(de.slisson.mps.conditionalEditor#2877762237605071651)" />
+            <external-mapping>
+              <mapping-node modelUID="r:31870c99-39a5-4a38-9ce4-c2dcd8b5c206(de.slisson.mps.conditionalEditor.generator.template.main@generator)" nodeID="7861928973102851150" />
+            </external-mapping>
+          </greater-priority-mapping>
+          <lesser-priority-mapping>
+            <generator generatorUID="4c7e6b88-d386-40ea-a53c-f652375c21a9(de.slisson.mps.conditionalEditor#2877762237605071651)" />
+            <external-mapping>
+              <mapping-node modelUID="r:31870c99-39a5-4a38-9ce4-c2dcd8b5c206(de.slisson.mps.conditionalEditor.generator.template.main@generator)" nodeID="2877762237605071652" />
             </external-mapping>
           </lesser-priority-mapping>
         </mapping-priority-rule>
